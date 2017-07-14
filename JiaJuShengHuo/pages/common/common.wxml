@@ -1,0 +1,43 @@
+<!--pages/common/common.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
+
+<scroll-view scroll-y>
+  <image class="cover_image" src="{{detailObj.cover}}"></image>
+  <view class="user_image_view">
+    <image class="user_image" src="{{detailObj.user_pic}}"></image>
+    <text class="user_name_text">{{detailObj.user_name}}</text>
+  </view>
+  <!--选择标签View-->
+  <view class="label_view">
+    <view class="label_name">{{detailObj.size}}</view>
+    <view class="label_name">{{detailObj.style}}</view>
+    <view class="label_name">{{detailObj.area}}</view>
+    <view class="label_name">{{detailObj.budget}}</view>
+  </view>
+  <!--HTML字符串-->
+  <view class="html_view">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  
+  <view class="line_view"></view>
+  <view class="user_comment">用户评论</view>
+  <!--用户评论-->
+  <block wx:for="{{comments}}" wx:for-item="comment">
+    <view class="comment_view">
+      <image class="comment_user_pic" src="{{comment.user_pic}}"></image>
+      <view class="comment_user_message">
+        <text class="comment_user_name">{{comment.user_name}}</text>
+        <text class="comment_user_content">{{comment.content}}</text>
+      </view>
+    </view>
+  </block>
+  <view class="line_view"></view>
+  <view class="other_messsage">更多相关内容</view>
+  <block wx:for="{{matches}}" wx:for-item="match_item">
+    <view class="match_item" >
+      <image class="match_item_image" src="{{match_item.image}}"></image>
+    </view>
+  </block>
+</scroll-view>
+

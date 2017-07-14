@@ -1,0 +1,15 @@
+<!--pages/jiazhuang_2/jiazhuang_2.wxml-->
+<import src="../../wxParse/wxParse.wxml"/>
+
+
+<image class="cover_image" src="{{cover}}"></image>
+  <view class="user_image_view">
+    <image class="user_image" src="{{posts[0].user_pic}}"></image>
+    <text class="user_name_text">{{posts[0].author}}</text>
+    <text class="user_subject">{{posts[0].subject}}</text>
+  </view>
+
+<view class="html_view">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+

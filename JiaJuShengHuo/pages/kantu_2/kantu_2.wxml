@@ -1,0 +1,23 @@
+<!--pages/kantu_2/kantu_2.wxml-->
+<view class="head_view">
+  <image class="user_pic_image" src="{{data.pic.user_pic}}"></image>
+  <text class="user_name_text">{{data.pic.user_name}}</text>
+</view>
+<view class="main_image_view" >
+  <image src="{{data.pic.normal_image}}" style="width:{{data.pic.data.info.img_w/3*2}}rpx;height:{{data.pic.data.info.img_h/3*2}}rpx"></image>
+</view>
+<!-- <text>{{data.pic.content}}</text> -->
+
+<view class="line_view"></view>
+<view class="user_comment">用户评论</view>
+
+<!--用户评论-->
+  <block wx:for="{{data.comments}}" wx:for-item="comment">
+    <view class="comment_view">
+      <image class="comment_user_pic" src="{{comment.user_pic}}"></image>
+      <view class="comment_user_message">
+        <text class="comment_user_name">{{comment.user_name}}</text>
+        <text class="comment_user_content">{{comment.content}}</text>
+      </view>
+    </view>
+  </block>

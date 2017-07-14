@@ -1,0 +1,41 @@
+<swiper class="swiperView" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" >
+  <block wx:for="{{bannerURLs}}">
+    <swiper-item>
+      <image class="bannerImage" src="{{item.image}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<block wx:for="{{cases}}">
+  <navigator url="../common/common?id={{item.group_id}}">
+    <view class="item_view">
+      <text class="item_title_text">{{item.title}}</text>
+      <view class="item_summary_view">
+        <image class="item_image" src="{{item.image}}"></image>
+        <text class="item_summary_text">{{item.summary}}</text>
+      </view>
+    </view>
+    <view class="item_user_view">
+      <image class="item_user_pic" src="{{item.user_pic}}"></image>
+      <label class="item_user_name">{{item.user_name}}</label>
+      <view class="item_click_share_view">
+      <text class="item_user_other_message">点击数:</text>
+      <text class="item_user_other_number">{{item.sharing_num}}</text>
+      <text class="item_user_other_message">分享数:</text>
+      <text class="item_user_other_number">{{item.click_num}}</text>
+      </view>
+    </view>
+  </navigator>
+</block>
+
+
+<!--<form>
+  <view wx:for="{{tags}}">{{item.key}}
+    <checkbox-group wx:for="{{item.sonTags}}">
+      <view>{{item.title}}
+        <checkbox value="{{item.key}}" checked="{{false}}" />
+      </view>
+    </checkbox-group>
+  </view>
+</form>-->

@@ -1,0 +1,71 @@
+/* pages/common/common.wxss */
+/*标签View*/
+.label_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 20rpx 0rpx;
+  border-bottom: 2rpx solid #dbdbdb;
+}
+.label_view .label_name {
+  padding: 10rpx;
+}
+
+/*其他用户的评论信息*/
+.comment_view {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #dbdbdb;
+}
+
+.comment_view .comment_user_pic {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+}
+
+
+
+/*分割线*/
+.line_view {
+  width: 100%;
+  height: 30rpx;
+  background-color: #dbdbdb;
+}
+.user_comment {
+  margin: 10rpx 0rpx;
+  text-align: center;
+}
+
+/*其他用户品论信息*/
+.comment_view .comment_user_message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx 20rpx;
+}
+.comment_view .comment_user_name {
+  font-size: 30rpx;
+  margin: 20rpx 0rpx;
+}
+.comment_view .comment_user_content {
+  font-size: 20rpx;
+}
+
+/*更多相关内容*/
+.other_messsage {
+  margin: 10rpx 0rpx;
+  text-align: center;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #dbdbdb;
+}
+
+.match_item {
+  padding: 20rpx;
+}
+.match_item .match_item_image {
+  width: 100%;
+  height: 500rpx;
+}

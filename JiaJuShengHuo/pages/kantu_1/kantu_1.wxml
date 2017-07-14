@@ -1,0 +1,16 @@
+<!--pages/kantu_1/kantu_1.wxml-->
+
+<block wx:for="{{pics}}" wx:for-item="pic">
+  <navigator url="../kantu_2/kantu_2?case_id={{pic.match_id}}">
+
+    <view class="whole_view">
+      <image style="width:{{pic.data.info.img_w}}rpx;height:{{pic.data.info.img_h}}rpx;" src="{{pic.normal_image}}"></image>
+      <text class="item_user_title">{{pic.case_title}}</text>
+      <view class="item_user_message">
+        <image class="item_user_pic" src="{{pic.user_pic}}"></image>
+        <text class="user_name_text">{{pic.user_name}}</text>
+        <text class="user_save_number">收藏数：{{pic.favtimes}}</text>
+      </view>
+    </view>
+  </navigator>
+</block>

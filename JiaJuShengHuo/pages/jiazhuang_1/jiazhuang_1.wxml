@@ -1,0 +1,26 @@
+<!--pages/jiazhuang_1/jiazhuang_1.wxml-->
+
+<!--<scroll-view scroll-y bindscrolltoupper="onPullDownRefresh">
+  
+</scroll-view>-->
+
+<block>
+    <view class="info_view">{{info.tag}}</view>
+    <block wx:for="{{guides}}" wx:for-item="guide">
+      <navigator url="../jiazhuang_2/jiazhuang_2?tid={{guide.tid}}">
+        <view class="line_space_view"></view>
+         <text class="item_title_subject">{{guide.subject}}</text>
+        <view class="item_view">
+          <!--<view>{{guide.subject}}</view>-->
+          <text class="item_guide_summary">{{guide.summary}}</text>
+          <image class="item_image" src="{{guide.feature}}"></image>
+          
+        </view>
+        <view class="item_user_view">
+            <image class="item_user_pic" src="{{guide.user_pic}}"></image>
+            <text class="item_user_name">{{guide.author}}</text>
+            <text class="item_user_visit">浏览数:{{guide.views}}</text>
+        </view>
+      </navigator>
+    </block>
+  </block>

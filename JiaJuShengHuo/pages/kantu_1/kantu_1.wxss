@@ -1,0 +1,39 @@
+/* pages/kantu_1/kantu_1.wxss */
+
+.whole_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.item_user_message {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10rpx;
+}
+
+.item_user_title {
+  padding: 20rpx 10rpx;
+}
+
+.user_name_text {
+  margin-left: 10rpx;
+  color: #dbdbdb;
+  display: flex;
+  font-size: 20rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_save_number {
+  font-size: 30rpx;
+  color: #dbdbdb;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  padding-right: 20rpx;
+}

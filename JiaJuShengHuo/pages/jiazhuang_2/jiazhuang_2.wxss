@@ -1,0 +1,8 @@
+/* pages/jiazhuang_2/jiazhuang_2.wxss */
+
+/*文章主题*/
+.user_subject {
+  text-align: center;
+  font-size: 30rpx;
+  padding: 20rpx;
+}

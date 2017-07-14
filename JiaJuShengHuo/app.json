@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/jiazhuang_1/jiazhuang_1",
+    "pages/jiazhuang_2/jiazhuang_2",
+    "pages/kantu_1/kantu_1",
+    "pages/kantu_2/kantu_2",
+    "pages/setting/setting",
+    "pages/common/common"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FAC87E",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"#ffffff"
+  },
+  "tabBar": {
+    "color": "#dbdbdb",
+    "selectedColor": "#FAC87E",
+    "borderStyle": "white",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "全屋记",
+      "iconPath": "images/tabbarImages/tabbar_quanwuji_normal.png",
+      "selectedIconPath": "images/tabbarImages/tabbar_quanwuji_selected.png"
+    },
+    {
+      "pagePath": "pages/jiazhuang_1/jiazhuang_1",
+      "text": "家装",
+      "iconPath": "images/tabbarImages/tabbar_jiazhuang_normal.png",
+      "selectedIconPath": "images/tabbarImages/tabbar_jiazhuang_selected.png"
+    },
+    {
+      "pagePath": "pages/kantu_1/kantu_1",
+      "text": "看图",
+      "iconPath": "images/tabbarImages/tabbar_picture_normal.png",
+      "selectedIconPath": "images/tabbarImages/tabbar_picture_selected.png"
+    },
+    {
+      "pagePath": "pages/setting/setting",
+      "text": "设置",
+      "iconPath": "images/tabbarImages/tabbar_setting_normal.png",
+      "selectedIconPath": "images/tabbarImages/tabbar_setting_selected.png"
+    }
+    ]
+  }
+}
