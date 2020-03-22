@@ -1,5 +1,5 @@
 # CYJiaJuShengHuo
-This is a WeChat App
+This is a WeChat Mini program
 
 
 
